@@ -22,5 +22,5 @@ fn main() {
     println!("{}", ART);
     println!("");
     println!("The official Permguard TrustPlane v{}", version());
-    println!("Copyright © 2025 Nitro Agility S.r.l.");
+    println!("Copyright © 2026 Nitro Agility S.r.l.");
 }
