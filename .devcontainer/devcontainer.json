@@ -1,0 +1,23 @@
+{
+	"name": "Rust",
+	"image": "rust:1.92.0",
+  "privileged": true,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "rust-lang.rust-analyzer",
+        "eamodio.gitlens",
+        "zxh404.vscode-proto3",
+        "ms-azuretools.vscode-docker",
+        "redhat.vscode-yaml",
+        "IBM.output-colorizer"
+      ],
+      "settings": {
+        "files.eol": "\n",
+        "go.useLanguageServer": true,
+        "go.lintTool": "golangci-lint"
+      }
+    }
+  }
+}

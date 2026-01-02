@@ -1,0 +1,31 @@
+
+version: '3'
+
+tasks:
+  # Source code quality
+
+  fmt:
+    desc: Format the source code using rustfmt
+    silent: true
+    cmds:
+      - cargo fmt --all
+
+  # Build and Test
+  
+  test:
+    dir:  ./
+    cmds:
+        - cargo test
+    silent: true
+
+  bench:
+    dir:  ./
+    cmds:
+        -  cargo bench
+    silent: true
+
+  run:
+    dir:  ./
+    cmds:
+        - cargo run --release
+    silent: true

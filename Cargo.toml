@@ -1,0 +1,27 @@
+[package]
+name = "permguard-trustplane"
+edition = "2024"
+version = "0.0.0"
+description = "Permguard PIC-native Trust Plane — Proof of Continuity for authority chains"
+license = "Apache-2.0"
+repository = "https://github.com/permguard/permguard-trustplane"
+documentation = "https://docs.rs/permguard-trustplane"
+keywords = ["authorization", "security", "distributed-systems"]
+categories = ["authentication", "cryptography"]
+
+[lib]
+name = "permguard_trustplane"
+
+[[bin]]
+name = "permguard-trustplane"
+path = "src/main.rs"
+
+[features]
+default = []
+testing = []
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+
+[dev-dependencies]
+tokio-test = "0.2"
