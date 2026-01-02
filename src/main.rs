@@ -14,8 +14,11 @@
  * limitations under the License.
  */
 
- use permguard_trustplane::version;
+use permguard_trustplane::version;
+
+const ART: &str = include_str!("assets/art.txt");
 
 fn main() {
+    println!("{}", ART);
     println!("Permguard TrustPlane v{}", version());
 }
